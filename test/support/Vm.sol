@@ -28,4 +28,9 @@ interface Vm {
     function assertEq(string calldata left, string calldata right, string calldata error) external pure;
     function assertGt(uint256 left, uint256 right, string calldata error) external pure;
     function assertLe(uint256 left, uint256 right, string calldata error) external pure;
+    function assertEq(bool left, bool right, string calldata error) external pure;
+    function assertGe(uint256 left, uint256 right, string calldata error) external pure;
+    function assertLt(uint256 left, uint256 right, string calldata error) external pure;
+    function assertNotEq(address left, address right, string calldata error) external pure;
+    function deal(address account, uint256 newBalance) external;
 }
